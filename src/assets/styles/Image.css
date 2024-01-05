@@ -1,0 +1,95 @@
+/* #slider {
+    overflow: hidden;
+  }
+  
+  @keyframes slider {
+    0% { left: 0; }
+    30% { left: 0; }
+    33% { left: -100%; }
+    63% { left: -100%; }
+    66% { left: -200%; }
+    95% { left: -200%; }
+    100% { left: 0; }
+  }
+  
+  #slider figure {
+    width: 50%;
+    position: relative;
+    animation: slider 9s linear 0s infinite; 
+    -webkit-animation: slider 9s linear 0s infinite; 
+  }
+  
+ 
+  
+  #slider figure img {
+    width: 23.333333333%;
+    height: 50%;
+    float: left;
+  }
+   */
+
+   body {
+    margin: 50;
+  }
+  
+  .slider {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .slider .slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    animation: slide 10s infinite;
+  }
+  
+  .slider .slide:nth-child(1) {
+    /* background-image: url('https://images.unsplash.com/photo-1595356700395-6f14b5c1f33f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80'); */
+    background-image: url('./gold3.jpg');
+    animation-delay: -0;
+  }
+  
+  .slider .slide:nth-child(2) {
+    background-image: url('./gold2.jpg');
+    animation-delay: -2s;
+  }
+    
+  .slider .slide:nth-child(3) {
+    background-image: url('./gold4.jpg');
+    animation-delay: -4s;
+  }
+    
+  .slider .slide:nth-child(4) {
+    background-image: url('./gold51.jpg');
+    animation-delay: -6s;
+  }
+  
+  .slider .slide:nth-child(5) {
+    background-image: url('./gold6.jpg');
+    animation-delay: -8s;
+  }
+  
+  
+  
+  @keyframes slide {
+    0%, 15%, 100% {
+      transform: translateX(0);
+      animation-timing-function: ease;
+    }
+    20% {
+      transform: translateX(-100%);
+      animation-timing-function: step-end;
+    }
+    95% {
+      transform: translateX(100%);
+      animation-timing-function: ease;
+    }
+  }
+

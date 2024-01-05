@@ -1,0 +1,25 @@
+nav{
+    background-color: rgb(18, 80, 4);
+    height: auto;
+    width: auto;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    padding: 15px;
+}
+a{
+    color:rgb(212, 218, 223);
+    text-decoration: none;
+}
+h6{
+    color:white;
+}
+li:hover:not(.active){
+    background-color: green;
+}
+.link{
+    color: white;
+}

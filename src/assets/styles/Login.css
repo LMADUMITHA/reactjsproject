@@ -1,0 +1,11 @@
+body{
+    background-image: url(./money2.jpg);
+    /* background-image: url('./man1.jpg'); */
+    background-repeat: no-repeat;
+    background-size: 45%;
+    
+}
+
+h4{
+    color:rgb(20, 57, 3);
+}
